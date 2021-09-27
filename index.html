@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center>
+    <h1>Image Recognition</h1>
+    <br>
+    <h3>Model is trained to identitfy the following gestures</h3>
+    <br>
+    <label class="items">Thumps Up</label>
+    <hr>
+    <label class="items">Victory</label>
+    <hr>
+    <label class="items">Awesome</label>
+    <hr>
+    <label>Webcam View -</label>
+    <br>
+    <div id="camera"></div>
+    <br>
+    <div id="result"></div>
+    <br>
+    <button class="btn btn-Primary" onclick="capture()">Capture</button>
+    <button class="btn btn-success" onclick="check()">identitfy</button>
+    <br>
+    <h3 id="object"></h3>
+    <h3 id="accuracy"></h3>
+    <h4>Designed By DAppLabs</h4>
+</center> 
+    <script src="script.js"></script>
+</body>
+</html>
